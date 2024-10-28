@@ -4,13 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>brat</title>
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="main.css">
 </head>
 <body>
-    <h1> brat </h1>
-   
-    <ol>
-        <li id="lista1">360</li>
+    <h1 id="header1"> brat </h1>
+    <img id="brat" src="image.png" >
+    <ol id="lista1">
+        <li>360</li>
         <li>Club Classics</li>
         <li>Sympathy Is a Knife</li>
         <li>I Might Say Something Stupid </li>
@@ -28,6 +28,39 @@
         <li>I think about it all the time</li>
         <li>365</li>
     </ol>
-    <p> but its not complete so its really not</p>
+    <script>
+
+        document.addEventListener ("DOMContentLoaded", function() {
+            // document. é um objeto que seleciona um elemento do html, o DOMContentLoaded diz que só pode ser executado
+            // o js apos o html ser carregado e o function () {} descreve todo o processo
+
+            //basicamente diz: espere o html antes de executar a função
+
+
+            const tituloPagina = document.getElementById("header1");
+            const imagemBrat = document.getElementById("brat");
+            //ha aqui a declaração de variaveis pela estrutura const y = ...
+
+            //então fazemos uso do document.ElementById para dizer o que cada variavel representa
+    
+            tituloPagina.addEventListener("click", function() {
+                //descreve a função que sera executada apos o "click" em "tituloPagina"
+
+                imagemBrat.style.display = "block"; //a imagem será mostrada pois foi mudado display de none para block
+            });
+
+imagemBrat.addEventListener("click", function() {
+    //adiciona a propriedade click em toda a imagem
+
+    imagemBrat.style.display = "none";
+    //retorna a imagem ao modo none
+});
+        });
+
+
+//area de testes ------
+//  O SITE COMEÇA NA IMAGEM E DEPOIS DE UM CLICK VAI PARA A SETLIST
+//acho que é só mudar a propriedade no css pra block logo :)
+    </script>
 </body>
 </html>

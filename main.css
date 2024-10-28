@@ -1,0 +1,39 @@
+body {
+    background-color: #8ace00;
+}
+
+*{
+    font-size: 31px;
+    font-family:'Arial Narrow';
+}
+
+h1 {
+    font-size: 50px;
+    position:absolute;
+    left: 155px;
+    top: 100px;
+}
+
+#lista1 {
+    position: absolute;
+    top: 200px;
+    left: 155px;
+}
+
+#lista2
+{
+    position: absolute;
+    left: 700px ;
+    top: 200px;
+}
+#brat{
+    display :none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width:100vw;
+    height: 100vh;
+    object-fit: cover;
+    z-index: 9999;
+}
+
