@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="main.css">
 </head>
 <body>
+    <div id="fundo">
     <h1 id="header1"> brat </h1>
     <img id="brat" src="image.png" >
     <ol id="lista1">
@@ -28,6 +29,7 @@
         <li>I think about it all the time</li>
         <li>365</li>
     </ol>
+    </div>
     <script>
 
         document.addEventListener ("DOMContentLoaded", function() {
@@ -39,6 +41,7 @@
 
             const tituloPagina = document.getElementById("header1");
             const imagemBrat = document.getElementById("brat");
+            const fundo = document.getElementById("fundo")
             //ha aqui a declaração de variaveis pela estrutura const y = ...
 
             //então fazemos uso do document.ElementById para dizer o que cada variavel representa
@@ -47,7 +50,17 @@
                 //descreve a função que sera executada apos o "click" em "tituloPagina"
 
                 imagemBrat.style.display = "block"; //a imagem será mostrada pois foi mudado display de none para block
-            });
+            }
+        
+        
+            //fundo.addEventListener("click", function() {
+                //fundo.background-color= "white"
+           // } tentar fazer com que ao ser clicado o fundo mude a cor pra branca
+        
+        
+        
+        
+        );
 
 imagemBrat.addEventListener("click", function() {
     //adiciona a propriedade click em toda a imagem
